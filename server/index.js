@@ -6,7 +6,11 @@ const fs      = require('fs');
 
 const app = express();
 app.use(express.json());
-
+app.use((_req, res, next) => {
+  res.setHeader('X-Frame-Options', 'ALLOWALL');
+  res.setHeader('Content-Security-Policy', 'frame-ancestors *');
+  next();
+});
 const {
   APS_CLIENT_ID, APS_CLIENT_SECRET,
   APS_CALLBACK_URL = 'http://localhost:8080/api/auth/callback',
