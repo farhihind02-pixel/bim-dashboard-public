@@ -89,11 +89,9 @@ body { display:flex; height:100vh; overflow:hidden; }
 
 /* ===== TOPBAR ===== */
 .topbar {
-  background: var(--topbar-bg); height:54px;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:0 18px; flex-shrink:0; gap:12px;
-  overflow:hidden;
-}
+  display: none;
+} 
+
 .topbar-left  { display:flex; align-items:center; gap:10px; flex:1; min-width:0; overflow:hidden; }
 .topbar-titles { display:flex; flex-direction:column; justify-content:center; gap:3px; flex:1; min-width:0; overflow:hidden; }
 .topbar-main-title { font-size:14px; font-weight:700; color:#fff; white-space:nowrap; }
@@ -471,4 +469,8 @@ body { display:flex; height:100vh; overflow:hidden; }
 }
 .sidebar-header {
   overflow: visible !important;
+}
+/* Masquer topbar visuellement sans casser la connexion */
+.topbar {
+  display: none;
 }

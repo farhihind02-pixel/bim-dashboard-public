@@ -75,7 +75,12 @@
 
 <!-- MAIN -->
 <main class="main-content">
-
+<!-- Éléments cachés nécessaires pour la connexion -->
+<div style="display:none">
+  <span id="connDot"></span>
+  <span id="connLabel"></span>
+  <span id="currentDate"></span>
+</div>
   
     <div class="topbar-right">
       <div class="connexion-status"><span class="status-dot ok" id="connDot"></span><span id="connLabel">ACC connecté ✓</span></div>
@@ -83,10 +88,6 @@
         <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10a7 7 0 0113.3-3H13m3 0V4m-2 13a7 7 0 01-10.3-9"/></svg>
         Réinitialiser
       </button>
-      <div class="topbar-date">
-        <svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.8"><path d="M5 3v2H3a1 1 0 00-1 1v11h16V6a1 1 0 00-1-1h-2V3m-8 0h8"/></svg>
-        <span id="currentDate"></span>
-      </div>
     </div>
   </header>
 
