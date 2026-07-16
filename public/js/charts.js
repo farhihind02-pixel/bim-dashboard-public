@@ -30,7 +30,7 @@ function initKpiDonut(stats) {
   const pct = stats.pctGlobal||0;
   kpiDonutChart = new Chart(ctx, {
     type:'doughnut',
-    data:{ datasets:[{ data:[pct,100-pct], backgroundColor:['#E87722','#E5E2DC'], borderWidth:0 }] },
+    data:{ datasets:[{ data:[pct,100-pct], backgroundColor:['#C9A84C','#E5E2DC'], borderWidth:0 }] },
     options:{ responsive:true, cutout:'80%', animation:{duration:700}, plugins:{legend:{display:false},tooltip:{enabled:false}} },
   });
 }
@@ -86,9 +86,9 @@ function getBlocData(stats,blocs,metric) {
       labels,
       datasets:[
         { label:'Réalisé', data:blocs.map(b=>stats.byBloc[b]?.realise||0),
-          backgroundColor:'#E87722', borderRadius:4, borderSkipped:false },
+          backgroundColor:'#C9A84C', borderRadius:4, borderSkipped:false },
         { label:'Total', data:blocs.map(b=>stats.byBloc[b]?.total||0),
-          backgroundColor:'#8A8480', borderRadius:4, borderSkipped:false },
+          backgroundColor:'#16213e', borderRadius:4, borderSkipped:false },
       ]
     };
   }
@@ -146,7 +146,7 @@ function renderChambordTable(stats, filterText='') {
 
   tbody.innerHTML=rows.map(([name,d])=>{
     const pct=d.total>0?Math.round(d.realise/d.total*100):0;
-    const barCol=pct>=70?'#22b07d':pct>=40?'#E87722':'#D93025';
+    const barCol=pct>=70?'#22b07d':pct>=40?'#C9A84C':'#D93025';
     return `<tr data-chambord="${name}" onclick="if(window.onChambordRowClick)window.onChambordRowClick('${name}',this)">
       <td><strong>${name}</strong></td>
       <td>${d.total}</td>
