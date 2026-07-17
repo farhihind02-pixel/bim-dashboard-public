@@ -18,7 +18,7 @@
     <div class="login-logo-big">
       <div class="sgtm-logo-login">
         <svg viewBox="0 0 60 50" fill="none" width="70">
-          <polygon points="30,0 60,46 0,46" fill="#E87722"/>
+          <polygon points="30,0 60,46 0,46" fill="#D7AA48"/>
         </svg>
         <div class="sgtm-text-login">SGTM</div>
         <div class="sgtm-sub-login">SOCIÉTÉ GÉNÉRALE DES TRAVAUX DU MAROC</div>
@@ -45,9 +45,7 @@
     <div class="sgtm-brand">
       <div class="sgtm-logo-full">
         <svg viewBox="0 0 96 72" fill="none" width="64" height="48">
-          <!-- Triangle orange centré sur le T (entre S et G) -->
           <polygon points="48,2 70,36 26,36" fill="#D7AA48"/>
-          <!-- Lettres SGTM avec plus d'espace -->
           <text x="1" y="68" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="30" fill="white" letter-spacing="2">SGTM</text>
         </svg>
       </div>
@@ -63,33 +61,20 @@
   </nav>
   <div class="sidebar-legend">
     <div class="legend-title">LÉGENDE</div>
-    <div class="legend-item"><span class="legend-dot" style="background:#22b07d"></span><span>Réalisé</span></div>
+    <div class="legend-item"><span class="legend-dot" style="background:#D7AA48"></span><span>Réalisé</span></div>
     <div class="legend-item"><span class="legend-dot" style="background:#D93025"></span><span>Non réalisé</span></div>
   </div>
-  
-<!-- <a class="btn-export" href="/api/export-snapshot" download>
-  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M4 2h8l4 4v12H4V2zm5 9v4m0 0l-2-2m2 2l2-2"/></svg>
-  Snapshot externe
-</a> -->
 </aside>
 
 <!-- MAIN -->
 <main class="main-content">
-<!-- Éléments cachés nécessaires pour la connexion -->
-<div style="display:none">
-  <span id="connDot"></span>
-  <span id="connLabel"></span>
-  <span id="currentDate"></span>
-</div>
-  
-    <div class="topbar-right">
-      <div class="connexion-status"><span class="status-dot ok" id="connDot"></span><span id="connLabel">ACC connecté ✓</span></div>
-      <button class="btn-reset" onclick="resetFilters()">
-        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10a7 7 0 0113.3-3H13m3 0V4m-2 13a7 7 0 01-10.3-9"/></svg>
-        Réinitialiser
-      </button>
-    </div>
-  </header>
+
+  <!-- IDs cachés nécessaires pour la connexion ACC -->
+  <div style="display:none">
+    <span id="connDot"></span>
+    <span id="connLabel"></span>
+    <span id="currentDate"></span>
+  </div>
 
   <!-- FILTRES MULTI-SELECT -->
   <div class="quick-filters">
@@ -200,7 +185,6 @@
           <div class="ent-bar-bg">
             <div class="ent-bar-fill ent-bar-sgtm" id="sgtmBar" style="width:0%"></div>
           </div>
-
         </div>
         <div class="enterprise-item">
           <div class="ent-header">
@@ -210,7 +194,6 @@
           <div class="ent-bar-bg">
             <div class="ent-bar-fill ent-bar-tgcc" id="tgccBar" style="width:0%"></div>
           </div>
-
         </div>
         <div class="ent-footnote">Pourcentage de levées réalisées par entreprise</div>
       </div>
@@ -231,7 +214,7 @@
         </div>
         <div class="kpi-stack-sep"></div>
         <div class="kpi-stack-item">
-          <div class="kpi-stack-icon" style="background:rgba(34,176,125,0.12);color:#22b07d">
+          <div class="kpi-stack-icon" style="background:rgba(215,170,72,0.12);color:#D7AA48">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M7 12l3 3 6-6"/></svg>
           </div>
           <div>
